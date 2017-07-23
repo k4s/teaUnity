@@ -57,17 +57,8 @@ public class TestWebSocketController : MonoBehaviour, WebSocketUnityDelegate {
 				webSocket.Close();
 			}
 			
-			if(GUI.Button(new Rect(30,130,320,80), "Send message")) {
+			if(GUI.Button(new Rect(30,130,320,80), "Send message data")) {
 			
-				// Fourth Step : we can send message
-				//    In this sample, we are waiting a "echo" message from the server
-				//    when we will receive this message, we will be able to change the display
-				webSocket.Send("Hello World");
-				sendingMessage = true;
-			}
-			if(GUI.Button(new Rect(30,220,320,80), "Send data")) {
-                //private string strFriends;
-                //private JsonData newFriend;
 
                 // create or modify json object
                 JsonData newFriend = new JsonData();
